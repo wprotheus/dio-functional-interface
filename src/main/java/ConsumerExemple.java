@@ -24,9 +24,11 @@ public class ConsumerExemple {
         numbers.forEach(n -> {
             if (n % 2 == 0) System.out.println(n);
         });
+
         numbers.stream()
                 .filter(n -> n % 2 == 0)
                 .forEach(System.out::println);
+
         System.out.println("------------------");
         numbers.stream().filter(n -> n % 2 == 0).forEach(System.out::println);
     }
